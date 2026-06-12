@@ -21,7 +21,27 @@ It is used by millions of developers around the world.
 
 ---
 
-## Step 2: Install Git
+## Step 2: Check if Git is Already Installed
+
+On macOS, Git is often included by default. Let's check:
+
+Type:
+
+```bash
+git --version
+```
+
+Press **Enter**.
+
+If you see a version number (like `git version 2.51.0`), Git is already installed. **Skip to Step 4**.
+
+If you see `command not found`, Git is not installed yet. Continue to Step 3.
+
+---
+
+## Step 3: Install Git (if needed)
+
+If Git was not found in Step 2, install it using Homebrew:
 
 Type:
 
@@ -33,25 +53,13 @@ Press **Enter**.
 
 Homebrew will download and install Git.
 
----
-
-## Step 3: Check the Installation
-
-Type:
+After installation completes, verify it worked by typing:
 
 ```bash
 git --version
 ```
 
-Press **Enter**.
-
-You should see something similar to:
-
-```text
-git version 2.51.0
-```
-
-The version number may be different.
+You should see a version number displayed.
 
 ---
 
